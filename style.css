@@ -1,0 +1,75 @@
+/* General styles */
+body {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+}
+h1 {
+    font-size: 4rem;
+    color:rgb(116, 221, 216) ;
+}
+ .options {
+    margin-bottom: 30px;
+ }
+ .options button {
+    background-color: transparent;
+    border-style: none;
+    font-size: 8rem;
+    min-width: 200px;
+    margin: 0 20px;
+    border-radius: 360px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+ }
+ .options button:hover {
+    background-color: rgb(170, 200, 203);
+ }
+ #playerDisplay, #computerDisplay {
+    font-size: 2rem;
+ }
+ #resultDisplay {
+    font-size: 5rem;
+    margin: 30px 0;
+ }
+ .greenText, #playerScoreDisplay {
+    color: rgb(24, 220, 24);
+
+ }
+ .redText, #computerScoreDisplay {
+    color: red;
+ }
+ .scoreDisplay {
+    font-size: 2rem;
+ }
+ .resetButton button{
+    min-width: 70px;
+    min-height: 30px;
+    margin: 10px;
+ }
+/* Make it responsive*/
+ @media screen and (max-width: 800px) {
+    h1 {
+        font-size: 3rem;
+      }
+    
+      #playerDisplay, #computerDisplay, #resultDisplay {
+        font-size: 2rem;
+      }
+    
+      .options button {
+        font-size: 5rem;
+        padding: 8px;
+        margin: 5px;
+      }
+    
+      .scoreDisplay {
+        font-size: 2rem;
+      }
+    
+      .resetButton button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+      }
+ }
